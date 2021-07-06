@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Music we Site</title>
+    <script src="https://kit.fontawesome.com/3b78e5896d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -19,7 +20,9 @@
                 <li><a href="#">SPECIFICATIONS</a></li>
                 <li><a href="#">PRODUCTS</a></li>
                 <li><a href="#">CONNECT</a></li>
+                <li><i class="fas fa-bars"></i></li>
             </ul>
+           
         </div>
         <div class="content">
             <div class="left-col">
@@ -35,24 +38,7 @@
         <source src="./music/metallica-nothing-else-matters-official-music-video.mp3" type="audio/mp3">
 
     </audio>
-    <script>
-        let mySong = document.getElementById("mySong");
-        let icon = document.getElementById("icon");
-         
-        icon.onclick = function(){
-            if(mySong.paused){
-                mySong.play();
-                icon.src = "./images/pause.png"
-
-            }else{
-                mySong.pause();
-                icon.src = "./images/play.png"
-            }
-            
-
-        }
-
-    </script>
+    
 </body>
 
 </html>
